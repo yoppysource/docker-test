@@ -1,0 +1,11 @@
+version: "3"
+services:
+  web:
+    build: # dockerfile.dev가 있어서 . 기재시 오류남
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - /app/node_modules
+      - .:/app

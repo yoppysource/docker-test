@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Leardsdsn React
+          learn react sd
         </a>
       </header>
     </div>

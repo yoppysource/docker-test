@@ -28,3 +28,5 @@ jobs:
       # Runs a single command using the runners shell
       - name: Build Docker image
         run: docker build -t busyru98/docker-react -f Dockerfile.dev .
+      - name: Test image
+        run: docker run busyru98/docker-react npm run test -- --coverage
